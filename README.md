@@ -42,23 +42,32 @@ Install mkcert.
 ```shell
 choco install mkcert
 ```
+
 Install RootCA
-```
+```shell
 mkcert -install
 ```
 
 Create certificates for localhost (or other hostname)
-```
+```shell
 mkcert localhost
 ```
 
 Copy them to /conf/certs and change nginx [config](conf/nginx/localhost.conf) options <code>ssl_certificate</code> and <code>ssl_certificate_key</code>
+```nginx
+    ssl_certificate	    /etc/nginx/certs/localhost.pem;
+    ssl_certificate_key /etc/nginx/certs/localhost-key.pem;
+```
 
 ## Set localhost certificates in Firefox
 
 Manually install the rootCA in firefox through firefox's cert manager (If it is not listed). Prefences -> Privacy & Security -> Certificates -> View Certificates -> Authorities (Tab) -> Import
 
+![Firefox Certificate Manager](firefox-1.png)
+
 Select certificate and set trust settings "Edit Trust..." -> set "This certificate can identify websites." -> ok
+
+![Edit CA certificate trust settings](firefox-2.png)
 
 
 - [How to Get HTTPS Working in Windows 10 Localhost Dev Environment](https://zeropointdevelopment.com/how-to-get-https-working-in-windows-10-localhost-dev-environment/)
