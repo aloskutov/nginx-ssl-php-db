@@ -24,41 +24,6 @@ localhost.crt
 localhost.key
 </pre>
 
-### [conf / mariadb](conf/mariadb)
-MariaDB configuration file
-<pre>my.cnf</pre>
-
-### [conf / nginx](conf/nginx)
-Nginx configuration file
-<pre>localhost.conf</pre>
-
-### [conf / php](conf/php)
-PHP configuration file
-<pre>php.ini</pre>
-
-## [logs /](logs/)
-Log files
-
-### [logs / mariadb](logs/mariadb)
-<pre>mariadb.err</pre>
-
-### [logs / nginx](logs/nginx)
-<pre>
-access.log
-error.log
-</pre>
-
-### [logs / php](logs/php)
-<pre>
-errors.log
-</pre>
-
-## [logs / mariadb](logs/mariadb)
-MariaDB database files
-
-## [src /](src/)
-Source codes
-
 # SSL for localhost
 
 Install openssl.
