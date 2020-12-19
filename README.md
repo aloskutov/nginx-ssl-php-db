@@ -1,5 +1,5 @@
 # nginx-ssl-php-mariadb
-localhost nginx + SSL + php + mariadb + adminer
+Local development environment: nginx + SSL + php + mariadb + adminer
 
 ## Project tree
 
@@ -18,7 +18,7 @@ localhost nginx + SSL + php + mariadb + adminer
 </pre>
 
 
-## Images
+## Docker Images
 + [PHP:fpm](https://hub.docker.com/_/php)
 + [MariaDB](https://hub.docker.com/_/mariadb)
 + [Nginx](https://hub.docker.com/_/nginx)
@@ -59,6 +59,7 @@ Copy them to /conf/certs and change nginx [config](conf/nginx/localhost.conf) op
     ssl_certificate_key /etc/nginx/certs/localhost-key.pem;
 ```
 
+
 ## Set localhost certificates in Firefox
 
 Manually install the rootCA in firefox through firefox's cert manager (If it is not listed). Prefences -> Privacy & Security -> Certificates -> View Certificates -> Authorities (Tab) -> Import
@@ -69,6 +70,7 @@ Select certificate and set trust settings "Edit Trust..." -> set "This certifica
 
 ![Edit CA certificate trust settings](firefox-2.png)
 
+---
 
 - [How to Get HTTPS Working in Windows 10 Localhost Dev Environment](https://zeropointdevelopment.com/how-to-get-https-working-in-windows-10-localhost-dev-environment/)
 - [How to create an HTTPS certificate for localhost domains](https://gist.github.com/cecilemuller/9492b848eb8fe46d462abeb26656c4f8)
