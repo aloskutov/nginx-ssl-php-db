@@ -1,11 +1,23 @@
 # nginx-ssl-php-mariadb
 localhost nginx + SSL + php + mariadb + adminer
 
+# Containers
+
+Run containers
+```shell
+docker compose up -d
+```
+
+Stop containers
+```shell
+docker compose down
+```
+
 # Folders
 ## [conf /](conf/)
 Configuration files
 
-### [conf / cert](conf/cert)
+### [conf / certs](conf/certs)
 Certificates
 <pre>
 localhost.crt
@@ -51,9 +63,9 @@ Source codes
 
 Install openssl.
 
-<code lang='bash'>
+```shell
 choco install openssl
-</code>
+```
 
 - [How to Get HTTPS Working in Windows 10 Localhost Dev Environment](https://zeropointdevelopment.com/how-to-get-https-working-in-windows-10-localhost-dev-environment/)
 - [How to create an HTTPS certificate for localhost domains](https://gist.github.com/cecilemuller/9492b848eb8fe46d462abeb26656c4f8)
