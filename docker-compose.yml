@@ -21,7 +21,7 @@ services:
         volumes:
             - ./src:/var/www/html
             - ./conf/php:/usr/local/etc/php
-            - ./logs/php:/var/log/php 
+            - ./logs/php:/var/log/php
 
     db:
         image: mariadb
