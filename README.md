@@ -1,28 +1,38 @@
 # nginx-ssl-php-mariadb
 localhost nginx + SSL + php + mariadb + adminer
 
-# Containers
-
-Run containers
-```shell
-docker compose up -d
-```
-
-Stop containers
-```shell
-docker compose down
-```
-
-# Folders
-## [conf /](conf/)
-Configuration files
-
-### [conf / certs](conf/certs)
-Certificates
+## Project tree
 <pre>
-localhost.crt
-localhost.key
+├───conf
+│   ├───certs
+│   ├───mariadb
+│   ├───nginx
+│   └───php
+├───logs
+│   ├───mariadb
+│   ├───nginx
+│   └───php
+├───mariadb
+└───src
 </pre>
+
+
+## Images
++ [PHP](https://hub.docker.com/_/php)
++ [MariaDB](https://hub.docker.com/_/mariadb)
++ [Nginx](https://hub.docker.com/_/nginx)
++ [Adminer](https://hub.docker.com/_/adminer)
+
+This project use the following ports:
+
+| Server     | Port |
+|------------|------|
+| MariaDB    | 3306 |
+| Adminer    | 8080 |
+| Nginx      |   80 |
+| Nginx SSL  |  433 |
+| PHP-FPM    | 9000 |
+
 
 # SSL for localhost
 
