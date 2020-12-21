@@ -22,6 +22,8 @@ services:
             - ./src:/var/www/html
             - ./conf/php:/usr/local/etc/php
             - ./logs/php:/var/log/php
+        environment:
+            APP_DEBUG: true
 
     db:
         image: mariadb
