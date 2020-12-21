@@ -20,11 +20,10 @@ services:
            - db
         volumes:
             - ./src:/var/www/html
-            - ./conf/php:/usr/local/etc/php
+            - ./conf/php:/usr/local/etc/php/conf.d
             - ./logs/php:/var/log/php
         environment:
-            APP_DEBUG: true
-
+            APP_DEBUG: "true"
     db:
         image: mariadb
         command: >
