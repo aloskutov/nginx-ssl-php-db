@@ -1,26 +1,27 @@
-# nginx-ssl-php-mariadb
-Local development environment: nginx + SSL + php + mariadb + adminer
+# nginx-ssl-php-db
+Local development environment: nginx + SSL + php + postgres + adminer
 
 ## Project tree
 
 <pre>
 ├───conf
 │   ├───certs
-│   ├───mariadb
 │   ├───nginx
-│   └───php
+│   ├───php
+│   └───postgres
 ├───logs
-│   ├───mariadb
 │   ├───nginx
-│   └───php
-├───mariadb
+│   ├───php
+│   └───postgres
+├───postgres
+│   └───pgdata
 └───src
 </pre>
 
 
 ## Docker Images
 + [PHP:fpm](https://hub.docker.com/_/php)
-+ [MariaDB](https://hub.docker.com/_/mariadb)
++ [Postrges](https://hub.docker.com/_/postgres)
 + [Nginx](https://hub.docker.com/_/nginx)
 + [Adminer](https://hub.docker.com/_/adminer)
 
@@ -28,7 +29,7 @@ This project use the following ports:
 
 | Server     | Port |
 |------------|------|
-| MariaDB    | 3306 |
+| Postgres   | 5432 |
 | Adminer    | 8080 |
 | Nginx      |   80 |
 | Nginx SSL  |  433 |
