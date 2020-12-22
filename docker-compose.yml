@@ -35,8 +35,6 @@ services:
         volumes:
             - ./postgres/pgdata:/var/lib/postgresql/data/pgdata
             - ./conf/postgres/my-postgres.conf:/etc/postgresql/postgresql.conf
-#            - ./conf/mariadb/:/etc/mysql/conf.d
-#            - ./logs/mariadb:/var/log/mysql
         environment:
             PGDATA: /var/lib/postgresql/data/pgdata
             POSTGRES_PASSWORD: secret
