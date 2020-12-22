@@ -1,4 +1,4 @@
-# nginx-ssl-php-mariadb
+# nginx-ssl-php-db
 Local development environment: nginx + SSL + php + mariadb + adminer
 
 ## Project tree
