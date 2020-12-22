@@ -1,6 +1,7 @@
 version: '3'
 services:
 
+### Nginx
     nginx:
         image: nginx
         ports:
@@ -14,6 +15,7 @@ services:
         links:
             - php
 
+### PHP
     php:
         image: php:fpm
         links:
@@ -24,6 +26,8 @@ services:
             - ./logs/php:/var/log/php
         environment:
             APP_DEBUG: "true"
+
+### DB:MariaDB
     db:
         image: mariadb
         command: >
@@ -40,6 +44,7 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: secret
 
+### Adminer
     adminer:
         image: adminer
         restart: always
