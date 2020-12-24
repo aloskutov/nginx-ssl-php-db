@@ -22,7 +22,7 @@ Local development environment: nginx + SSL + php + postgres + adminer
 ## Docker Images
 + [PHP:fpm](https://hub.docker.com/_/php)
 + [Postrges](https://hub.docker.com/_/postgres)
-+ [Nginx](https://hub.docker.com/_/nginx)
++ [Nginx:alpine](https://hub.docker.com/_/nginx)
 + [Adminer](https://hub.docker.com/_/adminer)
 
 This project use the following ports:
