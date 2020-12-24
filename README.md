@@ -21,7 +21,7 @@ Local development environment: nginx + SSL + php + mariadb + adminer
 ## Docker Images
 + [PHP:fpm](https://hub.docker.com/_/php)
 + [MariaDB](https://hub.docker.com/_/mariadb)
-+ [Nginx](https://hub.docker.com/_/nginx)
++ [Nginx:alpine](https://hub.docker.com/_/nginx)
 + [Adminer](https://hub.docker.com/_/adminer)
 
 This project use the following ports:
