@@ -8,6 +8,7 @@ Local development environment: nginx + SSL + php + mariadb + adminer
 │   ├───certs
 │   ├───mariadb
 │   ├───nginx
+│   │   └───conf.d
 │   └───php
 ├───logs
 │   ├───mariadb
