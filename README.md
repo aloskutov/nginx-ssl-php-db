@@ -7,6 +7,7 @@ Local development environment: nginx + SSL + php + postgres + adminer
 ├───conf
 │   ├───certs
 │   ├───nginx
+│   │   └───conf.d
 │   ├───php
 │   └───postgres
 ├───logs
